@@ -17,7 +17,8 @@ RUN apt-get update && apt-get install -y \
     libgomp1 \
     && rm -rf /var/lib/apt/lists/* \
     && ln -sf /usr/bin/python3.11 /usr/bin/python \
-    && ln -sf /usr/bin/pip3 /usr/bin/pip
+    && ln -sf /usr/bin/python3.11 /usr/bin/python3 \
+    && python -m pip install --upgrade pip
 
 # Set the working directory in the container
 WORKDIR /app
@@ -26,10 +27,10 @@ WORKDIR /app
 COPY requirements.txt .
 
 # Install PyTorch with CUDA support first
-RUN pip install --no-cache-dir torch torchvision --index-url https://download.pytorch.org/whl/cu121
+RUN python -m pip install --no-cache-dir torch torchvision --index-url https://download.pytorch.org/whl/cu121
 
 # Install any needed packages specified in requirements.txt
-RUN pip install --no-cache-dir -r requirements.txt
+RUN python -m pip install --no-cache-dir -r requirements.txt
 
 # Copy the current directory contents into the container at /app
 COPY . .
