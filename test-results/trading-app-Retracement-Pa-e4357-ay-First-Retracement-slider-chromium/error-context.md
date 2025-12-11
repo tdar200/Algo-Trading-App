@@ -1,0 +1,103 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e6]:
+        - generic [ref=e7]: △
+        - text: Trading App
+      - tablist [ref=e10]:
+        - tab "Analyzer" [selected] [ref=e11] [cursor=pointer]: Analyzer
+        - tab "Backtesting" [ref=e12] [cursor=pointer]: Backtesting
+        - tab "Optimization" [ref=e13] [cursor=pointer]: Optimization
+    - button "Switch to Dark Mode" [ref=e16] [cursor=pointer]:
+      - img [ref=e17]
+  - generic [ref=e19]:
+    - generic [ref=e20]:
+      - generic [ref=e21]:
+        - generic [ref=e22]: Stock Selection
+        - generic [ref=e23]:
+          - button "AMZN" [ref=e24] [cursor=pointer]:
+            - generic [ref=e25]: AMZN
+          - button "GOOG" [ref=e26] [cursor=pointer]:
+            - generic [ref=e27]: GOOG
+          - button "IBM" [ref=e28] [cursor=pointer]:
+            - generic [ref=e29]: IBM
+          - button "TSLA" [ref=e30] [cursor=pointer]:
+            - generic [ref=e31]: TSLA
+          - button "MSFT" [ref=e32] [cursor=pointer]:
+            - generic [ref=e33]: MSFT
+          - button "AAPL" [ref=e34] [cursor=pointer]:
+            - generic [ref=e35]: AAPL
+          - button "NVDA" [ref=e36] [cursor=pointer]:
+            - generic [ref=e37]: NVDA
+          - button "META" [ref=e38] [cursor=pointer]:
+            - generic [ref=e39]: META
+        - generic [ref=e40]:
+          - generic [ref=e41]: Custom Symbol
+          - generic [ref=e42]:
+            - textbox "Custom Symbol" [ref=e43]: AMZN
+            - group:
+              - generic: Custom Symbol
+        - generic [ref=e44]:
+          - generic [ref=e45]: Timeframe
+          - generic [ref=e46]:
+            - button "2 Years" [ref=e47] [cursor=pointer]
+            - textbox: 2y
+            - img
+            - group:
+              - generic: Timeframe
+      - generic [ref=e48]:
+        - generic [ref=e49]: Detection Parameters
+        - generic [ref=e50]:
+          - generic "Minimum % move from low to high to detect a swing" [ref=e51]:
+            - generic [ref=e52]: First Retracement
+            - generic [ref=e53]: 5%
+          - slider [ref=e58]: "5"
+        - generic [ref=e59]:
+          - generic "Minimum % pullback to confirm the swing" [ref=e60]:
+            - generic [ref=e61]: Second Retracement
+            - generic [ref=e62]: 5%
+          - slider [ref=e67]: "5"
+        - generic [ref=e68]:
+          - generic "Minimum touches required before showing a level" [ref=e69]:
+            - generic [ref=e70]: Touch Count
+            - generic [ref=e71]: "1"
+          - slider [ref=e75]: "1"
+        - generic [ref=e76]:
+          - generic "% range to cluster similar price levels together" [ref=e77]:
+            - generic [ref=e78]: Level Range
+            - generic [ref=e79]: 0.1%
+          - slider [ref=e83]: "0.001"
+      - generic [ref=e84]:
+        - generic [ref=e85]: Legend
+        - generic [ref=e86]:
+          - generic [ref=e89]: Resistance Levels (Red)
+          - generic [ref=e92]: Support Levels (Blue)
+          - generic [ref=e95]: Resistance Swings
+          - generic [ref=e98]: Support Swings
+    - generic [ref=e100]:
+      - generic [ref=e101]:
+        - generic [ref=e102]:
+          - generic [ref=e103]: AMZN
+          - generic [ref=e104]: 2 Years Chart
+        - generic [ref=e105]:
+          - generic [ref=e108]: Resistance
+          - generic [ref=e111]: Support
+      - progressbar [ref=e114]:
+        - img [ref=e115]
+      - generic [ref=e117]:
+        - generic [ref=e118]:
+          - generic [ref=e119]: "0"
+          - generic [ref=e120]: Resistance
+        - generic [ref=e121]:
+          - generic [ref=e122]: "0"
+          - generic [ref=e123]: Support
+        - generic [ref=e124]:
+          - generic [ref=e125]: "0"
+          - generic [ref=e126]: R Swings
+        - generic [ref=e127]:
+          - generic [ref=e128]: "0"
+          - generic [ref=e129]: S Swings
+```

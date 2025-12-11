@@ -1,0 +1,15 @@
+{
+  "name": "trading-app",
+  "version": "1.0.0",
+  "description": "Trading App with React frontend and Flask backend",
+  "scripts": {
+    "test": "playwright test",
+    "test:ui": "playwright test --ui",
+    "test:headed": "playwright test --headed",
+    "test:debug": "playwright test --debug",
+    "test:report": "playwright show-report"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.40.0"
+  }
+}

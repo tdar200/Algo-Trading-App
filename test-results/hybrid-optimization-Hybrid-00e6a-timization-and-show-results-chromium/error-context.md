@@ -1,0 +1,256 @@
+# Page snapshot
+
+```yaml
+- generic [ref=e3]:
+  - banner [ref=e4]:
+    - generic [ref=e5]:
+      - generic [ref=e6]:
+        - generic [ref=e7]: △
+        - text: Trading App
+      - tablist [ref=e10]:
+        - tab "Analyzer" [ref=e11] [cursor=pointer]: Analyzer
+        - tab "Backtesting" [ref=e12] [cursor=pointer]: Backtesting
+        - tab "Optimization" [active] [selected] [ref=e13] [cursor=pointer]: Optimization
+    - button "Switch to Dark Mode" [ref=e16] [cursor=pointer]:
+      - img [ref=e17]
+  - generic [ref=e20]:
+    - generic [ref=e22]:
+      - generic [ref=e23]:
+        - generic [ref=e24]: Symbol
+        - generic [ref=e25]:
+          - button "AAPL" [ref=e26] [cursor=pointer]:
+            - generic [ref=e27]: AAPL
+          - button "GOOG" [ref=e28] [cursor=pointer]:
+            - generic [ref=e29]: GOOG
+          - button "MSFT" [ref=e30] [cursor=pointer]:
+            - generic [ref=e31]: MSFT
+          - button "TSLA" [ref=e32] [cursor=pointer]:
+            - generic [ref=e33]: TSLA
+          - button "AMZN" [ref=e34] [cursor=pointer]:
+            - generic [ref=e35]: AMZN
+          - button "NVDA" [ref=e36] [cursor=pointer]:
+            - generic [ref=e37]: NVDA
+          - button "META" [ref=e38] [cursor=pointer]:
+            - generic [ref=e39]: META
+          - button "IBM" [ref=e40] [cursor=pointer]:
+            - generic [ref=e41]: IBM
+        - generic [ref=e42]:
+          - generic [ref=e43]: Custom Symbol
+          - generic [ref=e44]:
+            - textbox "Custom Symbol" [ref=e45]: AAPL
+            - group:
+              - generic: Custom Symbol
+      - generic [ref=e46]:
+        - generic [ref=e47]: Date Range
+        - generic [ref=e48]:
+          - generic [ref=e49]: Start Date
+          - generic [ref=e50]:
+            - textbox "Start Date" [ref=e51]: 2024-12-08
+            - group:
+              - generic: Start Date
+        - generic [ref=e52]:
+          - generic [ref=e53]: End Date
+          - generic [ref=e54]:
+            - textbox "End Date" [ref=e55]: 2025-12-08
+            - group:
+              - generic: End Date
+      - generic [ref=e56]:
+        - generic [ref=e57]: Account Settings
+        - generic [ref=e58]:
+          - generic [ref=e59]: Initial Capital
+          - generic [ref=e60]:
+            - paragraph [ref=e62]: $
+            - spinbutton "Initial Capital" [ref=e63]: "100000"
+            - group:
+              - generic: Initial Capital
+        - generic [ref=e64]:
+          - generic [ref=e65]: Commission
+          - generic [ref=e66]:
+            - spinbutton "Commission" [ref=e67]: "0.1"
+            - paragraph [ref=e69]: "%"
+            - group:
+              - generic: Commission
+      - generic [ref=e70]:
+        - generic [ref=e71]: Parameter Ranges
+        - generic "Min % move from low to high to detect a swing" [ref=e72]:
+          - generic [ref=e73]:
+            - generic [ref=e74]: First Retracement
+            - checkbox [checked] [ref=e77] [cursor=pointer]
+          - generic [ref=e80]:
+            - generic [ref=e81]:
+              - generic [ref=e82]: Start
+              - generic [ref=e83]:
+                - spinbutton "Start" [ref=e84]: "3"
+                - group:
+                  - generic: Start
+            - generic [ref=e85]: to
+            - generic [ref=e86]:
+              - generic [ref=e87]: End
+              - generic [ref=e88]:
+                - spinbutton "End" [ref=e89]: "10"
+                - group:
+                  - generic: End
+            - generic [ref=e90]: step
+            - generic [ref=e91]:
+              - generic [ref=e92]: Step
+              - generic [ref=e93]:
+                - spinbutton "Step" [ref=e94]: "1"
+                - group:
+                  - generic: Step
+        - generic "Min % pullback to confirm the swing" [ref=e95]:
+          - generic [ref=e96]:
+            - generic [ref=e97]: Second Retracement
+            - checkbox [checked] [ref=e100] [cursor=pointer]
+          - generic [ref=e103]:
+            - generic [ref=e104]:
+              - generic [ref=e105]: Start
+              - generic [ref=e106]:
+                - spinbutton "Start" [ref=e107]: "3"
+                - group:
+                  - generic: Start
+            - generic [ref=e108]: to
+            - generic [ref=e109]:
+              - generic [ref=e110]: End
+              - generic [ref=e111]:
+                - spinbutton "End" [ref=e112]: "10"
+                - group:
+                  - generic: End
+            - generic [ref=e113]: step
+            - generic [ref=e114]:
+              - generic [ref=e115]: Step
+              - generic [ref=e116]:
+                - spinbutton "Step" [ref=e117]: "1"
+                - group:
+                  - generic: Step
+        - generic "Min touches required before trading a level" [ref=e118]:
+          - generic [ref=e119]:
+            - generic [ref=e120]: Touch Count
+            - checkbox [ref=e123] [cursor=pointer]
+          - generic [ref=e126]:
+            - generic [ref=e127]:
+              - generic [ref=e128]: Start
+              - generic [ref=e129]:
+                - spinbutton "Start" [disabled] [ref=e130]: "1"
+                - group:
+                  - generic: Start
+            - generic [ref=e131]: to
+            - generic [ref=e132]:
+              - generic [ref=e133]: End
+              - generic [ref=e134]:
+                - spinbutton "End" [disabled] [ref=e135]: "3"
+                - group:
+                  - generic: End
+            - generic [ref=e136]: step
+            - generic [ref=e137]:
+              - generic [ref=e138]: Step
+              - generic [ref=e139]:
+                - spinbutton "Step" [disabled] [ref=e140]: "1"
+                - group:
+                  - generic: Step
+        - generic "% above resistance to trigger buy" [ref=e141]:
+          - generic [ref=e142]:
+            - generic [ref=e143]: Breakout Buffer
+            - checkbox [ref=e146] [cursor=pointer]
+          - generic [ref=e149]:
+            - generic [ref=e150]:
+              - generic [ref=e151]: Start
+              - generic [ref=e152]:
+                - spinbutton "Start" [disabled] [ref=e153]: "0"
+                - group:
+                  - generic: Start
+            - generic [ref=e154]: to
+            - generic [ref=e155]:
+              - generic [ref=e156]: End
+              - generic [ref=e157]:
+                - spinbutton "End" [disabled] [ref=e158]: "10"
+                - group:
+                  - generic: End
+            - generic [ref=e159]: step
+            - generic [ref=e160]:
+              - generic [ref=e161]: Step
+              - generic [ref=e162]:
+                - spinbutton "Step" [disabled] [ref=e163]: "2"
+                - group:
+                  - generic: Step
+        - generic "Take profit target percentage" [ref=e164]:
+          - generic [ref=e165]:
+            - generic [ref=e166]: Take Profit
+            - checkbox [checked] [ref=e169] [cursor=pointer]
+          - generic [ref=e172]:
+            - generic [ref=e173]:
+              - generic [ref=e174]: Start
+              - generic [ref=e175]:
+                - spinbutton "Start" [ref=e176]: "5"
+                - group:
+                  - generic: Start
+            - generic [ref=e177]: to
+            - generic [ref=e178]:
+              - generic [ref=e179]: End
+              - generic [ref=e180]:
+                - spinbutton "End" [ref=e181]: "25"
+                - group:
+                  - generic: End
+            - generic [ref=e182]: step
+            - generic [ref=e183]:
+              - generic [ref=e184]: Step
+              - generic [ref=e185]:
+                - spinbutton "Step" [ref=e186]: "5"
+                - group:
+                  - generic: Step
+        - generic "Stop loss percentage" [ref=e187]:
+          - generic [ref=e188]:
+            - generic [ref=e189]: Stop Loss
+            - checkbox [checked] [ref=e192] [cursor=pointer]
+          - generic [ref=e195]:
+            - generic [ref=e196]:
+              - generic [ref=e197]: Start
+              - generic [ref=e198]:
+                - spinbutton "Start" [ref=e199]: "3"
+                - group:
+                  - generic: Start
+            - generic [ref=e200]: to
+            - generic [ref=e201]:
+              - generic [ref=e202]: End
+              - generic [ref=e203]:
+                - spinbutton "End" [ref=e204]: "10"
+                - group:
+                  - generic: End
+            - generic [ref=e205]: step
+            - generic [ref=e206]:
+              - generic [ref=e207]: Step
+              - generic [ref=e208]:
+                - spinbutton "Step" [ref=e209]: "1"
+                - group:
+                  - generic: Step
+      - generic [ref=e210]:
+        - generic [ref=e211]: Processing
+        - generic [ref=e212]:
+          - generic [ref=e214]: Mode
+          - group [ref=e215]:
+            - button "Standard" [pressed] [ref=e216] [cursor=pointer]:
+              - img [ref=e217]
+              - text: Standard
+            - button "Hybrid (CPU)" [disabled]:
+              - img
+              - text: Hybrid (CPU)
+          - generic [ref=e219]: VectorBT not installed - Hybrid mode unavailable
+        - generic [ref=e220]:
+          - generic "Number of parallel workers for optimization" [ref=e221]:
+            - generic [ref=e222]: CPU Workers
+            - generic [ref=e223]: "4"
+          - generic [ref=e224] [cursor=pointer]:
+            - generic [ref=e228]: "1"
+            - generic [ref=e230]: "4"
+            - generic [ref=e232]: "8"
+            - generic [ref=e234]: "16"
+            - slider [ref=e236]: "4"
+      - generic [ref=e237]:
+        - generic [ref=e238]: 2,560
+        - generic [ref=e239]: Total Combinations
+        - generic [ref=e240]: Using 4 workers for parallel processing
+      - button "Start Optimization" [ref=e241] [cursor=pointer]: Start Optimization
+    - generic [ref=e244]:
+      - img [ref=e245]
+      - paragraph [ref=e247]: Configure parameter ranges and click "Start Optimization" to find the best settings
+      - paragraph [ref=e248]: 2560 combinations will be tested
+```
